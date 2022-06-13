@@ -26,12 +26,7 @@ class Card {
     }
     draw() {
         // background(this.backgroundImage);
-        
-        
         image(this.cardBackSideImage, this.x, this.y, 90, 160)
-       
-
-
         // console.log(this.x)
         this.shuffle()
     }
@@ -42,19 +37,19 @@ class Card {
         this.x = this.startRevX + this.scalar * cos(this.angleRev);
         this.y = this.startRevY + this.scalar * sin(this.angleRev);
 
-     //   image(this.cardBackSideImage, this.x, this.y, 90, 160)
+        image(this.cardBackSideImage, this.x, this.y, 90, 160)
 
 
 
 
         if (this.shuffleCard === true) {
-            
 
-            // for (let i = 0; i < tarot.allTarotCards.length; i++) {
 
-            //    image(tarot.allTarotCards[i], this.x, this.y, 90, 160)
+            for (let i = 0; i < tarot.allTarotCards.length; i++) {
 
-            // }
+               image(tarot.allTarotCards[i], this.x, this.y, 90, 160)
+
+            }
 
             this.angleRev++
 
