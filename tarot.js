@@ -3,8 +3,9 @@ class Tarot {
         this.allTarotCards = []
         this.backgroundImage
         this.cardBackSideImage
-        this.x = WIDTH / 2
-        this.y = HEIGHT / 2
+        this.x = 640
+        this.y = 270
+        this.arithmeticExPosition = 300
         this.createCards()
 
 
@@ -12,8 +13,9 @@ class Tarot {
 
     createCards() {
         for (let i = 0; i < 22; i++) {
-            const card = new Card(this.cardBackSideImage)
+            const card = new Card(this.cardBackSideImage, this.arithmeticExPosition)
             this.allTarotCards.push(card)
+            this.arithmeticExPosition += 30
         }
     }
 
@@ -22,23 +24,21 @@ class Tarot {
             card.cardBackSideImage = loadImage('./images/card-backside.png')
         })
 
-        // this.cardBackSideImage = loadImage('./images/card-backside.png')
         this.backgroundImage = loadImage('./images/background.jpg')
+
     }
 
 
     draw() {
         background(this.backgroundImage)
+     
 
         this.allTarotCards.forEach(function (oneTarotCard) {
             oneTarotCard.draw()
 
 
         })
-        
 
     }
-
-
 
 }
