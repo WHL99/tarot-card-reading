@@ -47,10 +47,8 @@ function keyPressed() {
 function mouseClicked() {
 
     i = Math.round(Math.random() * 22)
-    image(this.all22Cards[i].src, 617.5, 440, 135, 240)
+    // image(this.all22Cards[i].src, 617.5, 440, 135, 240)
 
-    //   document.querySelector('body').innerHTML = '<h2>hello</h2>'
-    // this.all22Cards[i].text
     console.log(i)
 
 } 
