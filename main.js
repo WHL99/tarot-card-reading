@@ -26,9 +26,13 @@ function draw() {
 function keyPressed() {
     if (keyCode === 32) {
         tarot.allTarotCards.forEach(card => {
-            card.shuffleCard = true;
+
+            tarot.allTarotCards.delay(1000)
+
+          //  card.shuffleCard = true;
+             card.shuffleCard = !card.shuffleCard
         })
-     //   tarot.card.shuffleCard = !tarot.card.shuffleCard
+       
 
     }
 
