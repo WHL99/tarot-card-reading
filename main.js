@@ -1,7 +1,9 @@
 const tarot = new Tarot()
 
 
-//all these functions will be called by the P5 library
+var shuffleTimes = 0
+
+
 function preload() {
 
     tarot.preload()
@@ -15,6 +17,8 @@ function setup() {
 
     angleMode(DEGREES)
 
+ 
+
 
 }
 
@@ -24,17 +28,16 @@ function draw() {
 }
 
 function keyPressed() {
-    if (keyCode === 32) {
+    if (keyCode === 32 && shuffleTimes <2 ) {
         tarot.allTarotCards.forEach(card => {
 
-            tarot.allTarotCards.delay(1000)
-
-          //  card.shuffleCard = true;
+        
              card.shuffleCard = !card.shuffleCard
         })
        
-
     }
+    shuffleTimes ++
 
+    
 
 }

@@ -3,14 +3,18 @@ class Card {
         this.cardBackSideImage = cardBackSideImage
 
         this.shuffleCard = false
+       
         this.angleRev = 0
-        this.scalar = 100
-        this.startRevX = WIDTH / 2      //移動圓心
-        this.startRevY = HEIGHT / 2     //移動圓心
-        this.randomX = Math.random() * 200
-        this.randomY = Math.random() * 200
-        this.x = WIDTH / 2
-        this.y = HEIGHT / 2
+        this.scalar = Math.random() * 220
+        //100
+        this.startRevX = 640      //移動圓心
+        this.startRevY = 300     //移動圓心
+        this.randomX = Math.random() * 500
+        //200
+        this.randomY = Math.random() * 500
+        //123
+        this.x = 640
+        this.y = 270
 
     }
 
@@ -42,22 +46,22 @@ class Card {
         this.x = this.startRevX + this.scalar * cos(this.angleRev);
         this.y = this.startRevY + this.scalar * sin(this.angleRev);
 
-     //   image(this.cardBackSideImage, this.x, this.y, 90, 160)
+    
 
 
 
+        if (this.shuffleCard === true ) {
 
-        if (this.shuffleCard === true) {
-            
-
-            // for (let i = 0; i < tarot.allTarotCards.length; i++) {
-
-            //    image(tarot.allTarotCards[i], this.x, this.y, 90, 160)
-
-            // }
-
+           
             this.angleRev++
+           
 
+
+        }else {
+          
+
+            this.x = 640
+            this.y = 270
         }
 
     }
