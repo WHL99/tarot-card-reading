@@ -1,6 +1,6 @@
 class Card {
     constructor(cardBackSideImage, arithmeticExPosition) {
-       console.log(arithmeticExPosition)
+        console.log(arithmeticExPosition)
         this.cardBackSideImage = cardBackSideImage
         this.arithmeticExPosition = arithmeticExPosition
         this.shuffleCard = false
@@ -13,12 +13,16 @@ class Card {
         this.randomY = Math.random() * 200
         this.x = 640
         this.y = 180
-         
-       
+        this.width = 87
+        this.height = 172
+     
+
+
+
         this.position = Math.random() * 1400
-       
+
         this.firstExPosition = 300
-        
+
     }
 
 
@@ -26,13 +30,18 @@ class Card {
         this.backgroundImage = loadImage('./images/background.jpg')
     }
     draw() {
-  
-        image(this.cardBackSideImage, this.x, this.y, 90, 160)
+
+       image(this.cardBackSideImage, this.x, this.y, this.width, this.height)
+
         this.shuffle()
+
+
 
         if (keyCode === 32 && shuffleTimes == 2) {
             this.expansion()
         }
+
+
     }
 
     shuffle() {
@@ -40,15 +49,18 @@ class Card {
         this.y = this.startRevY + this.scalar * sin(this.angleRev);
         if (this.shuffleCard === true) {
             this.angleRev++
-        } 
+        }
         else {
+
+            // image(tarot.allTarotCards,this.x,this.y, this.width, this.height)
+
             this.x = 640
             this.y = 180
-        }
+        } 
     }
 
     expansion() {
         this.x = this.arithmeticExPosition
-        this.y = 180  
+        this.y = 180
     }
 }

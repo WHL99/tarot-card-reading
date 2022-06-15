@@ -1,15 +1,81 @@
-h1, h2 {
-    text-align: center;
-    font-size: 2.4em;
+#p5-canvas {
+
+    margin-left: 68.5px;
+    margin-top: -173px;
+
+}
+
+
+
+.background-photo {
+    background-image: url('./images/background.jpg');
+    background-position: 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 650px;
+    padding-top: 50px;
+    position: relative;
+}
+
+
+
+
+body>div {
+    font-size: 3em;
+    color: fuchsia;
+    font-weight: lighter;
+    padding-top: 0;
+    margin-top: -10px;
+    margin-left: 14px;
+}
+
+.second-line {
+    font-size: 3em;
+    color: fuchsia;
+    font-weight: lighter;
+    padding-top: 0;
+    margin-top: -45px;
+    margin-left: 625px;
+}
+
+.third-line {
+    font-size: 3em;
+    color: fuchsia;
+    font-weight: lighter;
+    padding-top: 0;
+    margin-top: 43px;
+    margin-left: 630px;
+}
+
+
+
+
+
+.containerTarotText {
+    margin-left: 18px;
+    margin-right: 1000px;
+
+    margin-top: -380px;
+
 }
 
 h3 {
-    text-align: center;
-    font-size: 1.2em;
+    font-size: 1.3em;
+    color: mediumspringgreen;
+    text-shadow: 0.4px 0.4px blue;
+    font-weight: lighter;
+    line-height: 1.4em;
+
+
 }
 
-section{
-    padding-left: 200px;
-    padding-right: 200px;
-}
+h2 {
+   
+margin-bottom: -0.7em;
+    font-size: 1.6em;
+    color: mediumspringgreen;
+    text-shadow: 0.4px 0.4px blue;
+    font-weight: lighter;
 
+
+}
