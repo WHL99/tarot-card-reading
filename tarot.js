@@ -27,6 +27,7 @@ class Tarot {
     }
 
     draw() {
+        clear()
         background(this.backgroundImage)
         this.allTarotCards.forEach(function (oneTarotCard) {
             oneTarotCard.draw()
@@ -34,6 +35,7 @@ class Tarot {
 
         if (this.cardPicked !== undefined ){
             image(this.cardPicked.src, this.x, this.y, 90, 160)
+            document.querySelector('section').innerHTML = '<h3>' + this.cardPicked.text + '</h3>'
             console.log('testtest')
        
         }
