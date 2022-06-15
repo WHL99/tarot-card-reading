@@ -6,13 +6,13 @@ class Card {
         this.shuffleCard = false
         this.expansionCard = false
         this.angleRev = 0
-        this.scalar = Math.random() * 200
+        this.scalar = Math.random() * 180
         this.startRevX = 640      //移動圓心
-        this.startRevY = 300     //移動圓心
-        this.randomX = Math.random() * 364
-        this.randomY = Math.random() * 325
+        this.startRevY = 180     //移動圓心
+        this.randomX = Math.random() * 300
+        this.randomY = Math.random() * 200
         this.x = 640
-        this.y = 270
+        this.y = 180
          
        
         this.position = Math.random() * 1400
@@ -43,12 +43,12 @@ class Card {
         } 
         else {
             this.x = 640
-            this.y = 270
+            this.y = 180
         }
     }
 
     expansion() {
         this.x = this.arithmeticExPosition
-        this.y = 270   
+        this.y = 180  
     }
 }
