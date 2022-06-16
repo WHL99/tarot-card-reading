@@ -8,12 +8,12 @@ class Card {
         this.angleRev = 0
         this.scalarX = Math.random() * 350
         this.scalarY = Math.random() * 180
-        this.startRevX = 640      //移動圓心
-        this.startRevY = 180     //移動圓心
+        this.startRevX = 640
+        this.startRevY = 180
         this.randomX = Math.random() * 200
         this.randomY = Math.random() * 200
         this.x = 640
-        this.y = 180
+        this.y = 225
         this.width = 87 * 1.1
         this.height = 172 * 1.1
         this.position = Math.random() * 1400
@@ -37,17 +37,19 @@ class Card {
         this.x = this.startRevX + this.scalarX * cos(this.angleRev);
         this.y = this.startRevY + this.scalarY * sin(this.angleRev);
         if (this.shuffleCard === true) {
+
             this.angleRev++
         }
         else {
             this.x = 640
-            this.y = 180
-          
+            this.y = 225
+
         }
     }
 
     expansion() {
+
         this.x = this.arithmeticExPosition + 100
-        this.y = 180
+        this.y = 225
     }
 }

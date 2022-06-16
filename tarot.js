@@ -1,11 +1,9 @@
 class Tarot {
     constructor() {
         this.allTarotCards = []
-     //   this.backgroundImage
         this.cardBackSideImage
         this.x = 640
-        //this.y = 270
-        this.y = 180
+        this.y = 225
         this.arithmeticExPosition = 310
         this.createCards()
         this.cardPicked
@@ -28,24 +26,22 @@ class Tarot {
         this.allTarotCards.forEach((card) => {
             card.cardBackSideImage = loadImage('./images/card-backside.png')
         })
-      //  this.backgroundImage = loadImage('./images/background.jpg')
+
     }
 
     draw() {
         clear()
       
-     //   background(this.backgroundImage)
         this.allTarotCards.forEach(function (oneTarotCard) {
             oneTarotCard.draw()
         })
 
         if (this.cardPicked !== undefined ){       
-            image(this.cardPicked.src, this.x  , this.y *2 , this.openedCardWidth, this.openedCardHeight)
-           // image(this.cardPicked.src, this.x - 88 , this.y + 260, this.openedCardWidth, this.openedCardHeight)
-            
-             
+            image(this.cardPicked.src, this.x - (this.openedCardWidth - this.width)+4, this.y - 173  , this.openedCardWidth, this.openedCardHeight)
+           
             document.querySelector('.containerTarotText').innerHTML = '<h2>' + this.cardPicked.title  + '</h2><br><h3>' + this.cardPicked.text + '</h3>'
 
         }
     }
 }
+

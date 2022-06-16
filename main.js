@@ -39,14 +39,11 @@ function setup() {
 
     let canvas = createCanvas(WIDTH, HEIGHT)
     canvas.parent('p5-canvas');
-
     angleMode(DEGREES)
 }
 
 function draw() {
     tarot.draw()
-
-
 }
 
 function keyPressed() {
@@ -55,30 +52,21 @@ function keyPressed() {
             card.shuffleCard = !card.shuffleCard
         })
     }
-    console.log('hellocheck')
+  
     shuffleTimes++
 
     if (shuffleTimes == 2){
         keyPressed = function(){}
     }
-
-    // if (keyCode === 32 && shuffleTimes == 2) {
-    //     tarot.allTarotCards.forEach(card => {
-    //         card.expansionCard = !card.expansionCard
-    //     })
-    // }
 }
 
 function mouseClicked() {
     if (shuffleTimes == 2){
     let i = Math.floor((Math.random() * all22Cards.length))
     tarot.cardPicked = all22Cards[i]
-    console.log('main testtest')
-
-    console.log(tarot.allTarotCards)
-
+  
     document.querySelector('.guide').innerHTML = '<h2></h2>'
-    document.querySelector('body div').innerHTML = ''
+    document.querySelector('.title').innerHTML = ''
     document.querySelector('.second-line').innerHTML = ''
     document.querySelector('.third-line').innerHTML = ''
 
