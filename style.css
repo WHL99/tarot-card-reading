@@ -1,7 +1,9 @@
 #p5-canvas {
-
-    margin-left: 68.5px;
-    margin-top: -173px;
+top: 500px;
+position: relative;
+    margin-left: 65px;
+    margin-top: -464px;
+    border: 10px solid red;
 
 }
 
@@ -21,61 +23,88 @@
 
 
 body>div {
+
+    font-family: 'Josefin Sans';
     font-size: 3em;
-    color: fuchsia;
-    font-weight: lighter;
+    color: rgb(214, 136, 214);
+    font-weight: 900;
     padding-top: 0;
-    margin-top: -10px;
+    margin-top: -39.5px;
+    /* 15 */
     margin-left: 14px;
 }
 
 .second-line {
-    font-size: 3em;
-    color: fuchsia;
-    font-weight: lighter;
+    font-family: 'Josefin Sans';
+    font-size:4.3em;
+    /* font-size: 3em; */
+    color:  rgb(214, 136, 214);
+    font-weight: 900;
     padding-top: 0;
-    margin-top: -45px;
-    margin-left: 625px;
+    margin-top: -50px;
+    /* margin-top: -33px; */
+    /* -20.5px; */
+    margin-left: 619px;
 }
 
 .third-line {
-    font-size: 3em;
-    color: fuchsia;
-    font-weight: lighter;
+    font-family: 'Josefin Sans';
+    font-size: 7.5em;
+    color:  rgb(214, 136, 214);
+    font-weight: 900;
     padding-top: 0;
-    margin-top: 43px;
-    margin-left: 630px;
+    margin-top: -92px;
+    /* 72 */
+    margin-left: 725px;
+    /* 630 */
+
 }
 
+.guide {
+    font-family: 'Josefin Sans';
+    font-size: 1.7em;
+    color: rgba(72, 60, 13, 0.836);
+    font-weight: 700;
+    line-height: 2.08em;
+    margin-top: 170px;
+    margin-left: 18px;
+    margin-right: 1000px;
 
+
+}
 
 
 
 .containerTarotText {
-    margin-left: 18px;
+    margin-left: 35px;
     margin-right: 1000px;
-
-    margin-top: -380px;
-
+    margin-top: -286.5px;
+    /* margin-top: -582px; */
+    color: rgba(87, 154, 160, 100);
 }
 
 h3 {
+    font-family: 'Josefin Sans';
     font-size: 1.3em;
-    color: mediumspringgreen;
-    text-shadow: 0.4px 0.4px blue;
+
+    /* text-shadow: 0.4px 0.4px blue; */
     font-weight: lighter;
     line-height: 1.4em;
+    font-family: 'Josefin Sans';
+    /* color: rgb(11, 64, 44); */
+    margin-top: -25px;
 
 
 }
 
 h2 {
-   
-margin-bottom: -0.7em;
-    font-size: 1.6em;
-    color: mediumspringgreen;
-    text-shadow: 0.4px 0.4px blue;
-    font-weight: lighter;
-
+    font-family: 'Josefin Sans';
+    margin-bottom: 1em;
+    font-size: 5em;
+    line-height: 0.6615em;
+    /* color: rgb(11, 64, 44); */
+    /* text-shadow: 0.4px 0.4px blue; */
+    /* font-weight: lighter;
+ */
 
 }

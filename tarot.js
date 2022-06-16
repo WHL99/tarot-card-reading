@@ -9,10 +9,10 @@ class Tarot {
         this.arithmeticExPosition = 310
         this.createCards()
         this.cardPicked
-        this.width = 87
-        this.height = 172
-        this.openedCardWidth = 87*0.5
-        this.openedCardHeight = 172*0.5
+        this.width = 87*1.1
+        this.height = 172*1.1
+        this.openedCardWidth = 87*2.2
+        this.openedCardHeight = 172*2.2
         
     }
 
@@ -20,7 +20,7 @@ class Tarot {
         for (let i = 0; i < 22; i++) {
             const card = new Card(this.cardBackSideImage, this.arithmeticExPosition)
             this.allTarotCards.push(card)
-            this.arithmeticExPosition += 32
+            this.arithmeticExPosition += 32.6
         }
     }
 
@@ -40,16 +40,12 @@ class Tarot {
         })
 
         if (this.cardPicked !== undefined ){       
-            image(this.cardPicked.src, this.x - (this.openedCardWidth - this.width)/2 , this.y, this.openedCardWidth, this.openedCardHeight)
+            image(this.cardPicked.src, this.x  , this.y *2 , this.openedCardWidth, this.openedCardHeight)
+           // image(this.cardPicked.src, this.x - 88 , this.y + 260, this.openedCardWidth, this.openedCardHeight)
             
              
             document.querySelector('.containerTarotText').innerHTML = '<h2>' + this.cardPicked.title  + '</h2><br><h3>' + this.cardPicked.text + '</h3>'
 
-
-
-
-           // document.querySelector('.containerTarotText').innerHTML = ''
-         //   image(this.allTarotCards, 10000, 10000, this.width, this.height)
         }
     }
 }
