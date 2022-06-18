@@ -40,7 +40,8 @@ class Tarot {
             image(this.cardPicked.src, this.x - (this.openedCardWidth - this.width)+4, this.y - 173  , this.openedCardWidth, this.openedCardHeight)
            
             document.querySelector('.containerTarotText').innerHTML = '<h2>' + this.cardPicked.title  + '</h2><br><h3>' + this.cardPicked.text + '</h3>'
-
+            mouseClicked = function () { }
+ 
         }
     }
 }

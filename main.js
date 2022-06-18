@@ -78,9 +78,7 @@ function mouseClicked() {
             allTarotCard.arithmeticExPosition = 100000
             allTarotCard.y = 100000
         }
-    }
-
-    mouseClicked = function () { }
-
+    } 
+     
 
 } 
