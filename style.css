@@ -2,16 +2,7 @@
     position: absolute;
     top: 0vh;
     bottom: 0vh;
-     /* right: 60px;
-    margin-left: 65px; */
-    /* margin-top: -464px;   */
-
-    /* margin-left: 4.5%; */
     width:100%;
-
-    /* border-style: solid;
-    border-color: red; */
-
 }
 
 .background-photo {
@@ -19,14 +10,9 @@
     background-position: 0 0;
     background-size: cover;
     background-repeat: no-repeat;
-    /* height: 650px; */
     height: 98vh;
-    /* padding-top: 50px; */
     object-fit: cover;
-    /* position: relative; */
     width:100%;
-
-  
 }
 
 .title {
@@ -34,14 +20,9 @@
     font-size: 3em;
     color: rgb(214, 136, 214);
     font-weight: 900;
-    
-   
     margin-left: 1%;
     width:99%;
     padding-top:0vh;
-
-    /* border-style: solid;
-    border-color: green; */
 }
 
 .second-line {
@@ -49,14 +30,9 @@
     font-size: 4.3em;
     color: rgb(214, 136, 214);
     font-weight: 900;
-    
-   
     margin-left: 43%;
     width:57%;
     padding-top:2vh;
-
-    /* border-style: solid;
-    border-color: green; */
 }
 
 .third-line {
@@ -64,13 +40,9 @@
     font-size: 7.5em;
     color: rgb(214, 136, 214);
     font-weight: 900;
- 
     margin-left: 50%;
     width:50%;
     margin-top:-11.5vh;
-
-    /* border-style: solid;
-    border-color: green; */
 }
 
 .guide {
@@ -79,30 +51,15 @@
     color: rgba(72, 60, 13, 0.836);
     font-weight: 700;
     line-height: 2.08em;
-   
-   
-
     margin-left: 1%;
-    width:30%;
+    width:28%;
     margin-top:13vh;
-
-/* 
-    border-style: solid;
-    border-color: blue; */
 }
 
 .containerTarotText {
-    /* margin-left: 35px;
-    margin-right: 1000px;
-    margin-top: -112px; */
-
     margin-left: 1%;
     width:27%;
-
     color: rgba(87, 154, 160, 100);
-
-    /* border-style: solid;
-    border-color: yellow; */
 }
 
 h3 {
@@ -111,12 +68,7 @@ h3 {
     font-weight: lighter;
     line-height: 1.4em;
     font-family: 'Josefin Sans';
-
     margin-top:4vh;
-   
-
-    /* border-style: solid;
-    border-color: purple; */
 }
 
 h2 {
@@ -124,8 +76,5 @@ h2 {
     margin-bottom: 1em;
     font-size: 5em;
     line-height: 0.74em;
-
     margin-top:10vh;
-    /* border-style: solid;
-    border-color: black; */
 }
