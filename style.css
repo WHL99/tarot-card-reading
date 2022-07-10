@@ -1,13 +1,8 @@
 #p5-canvas {
     position: absolute;
-    top: 570px;
-    right: 60px;
-    margin-left: 65px;
-    margin-top: -464px;
-
-    border-style: solid;
-    border-color: red;
-
+    top: 0vh;
+    bottom: 0vh;
+    width:100%;
 }
 
 .background-photo {
@@ -15,14 +10,9 @@
     background-position: 0 0;
     background-size: cover;
     background-repeat: no-repeat;
-    /* height: 650px; */
-    height: 100vh;
-    /* padding-top: 50px; */
+    height: 98vh;
     object-fit: cover;
-    /* position: relative; */
     width:100%;
-
-  
 }
 
 .title {
@@ -30,12 +20,9 @@
     font-size: 3em;
     color: rgb(214, 136, 214);
     font-weight: 900;
-    padding-top: 0;
-    margin-top: -39.5px;
-    margin-left: 14px;
-
-    border-style: solid;
-    border-color: green;
+    margin-left: 1%;
+    width:99%;
+    padding-top:0vh;
 }
 
 .second-line {
@@ -43,12 +30,9 @@
     font-size: 4.3em;
     color: rgb(214, 136, 214);
     font-weight: 900;
-    padding-top: 0;
-    margin-top: -50px;
-    margin-left: 619px;
-
-    border-style: solid;
-    border-color: green;
+    margin-left: 43%;
+    width:57%;
+    padding-top:2vh;
 }
 
 .third-line {
@@ -56,12 +40,9 @@
     font-size: 7.5em;
     color: rgb(214, 136, 214);
     font-weight: 900;
-    padding-top: 0;
-    margin-top: -92px;
-    margin-left: 725px;
-
-    border-style: solid;
-    border-color: green;
+    margin-left: 50%;
+    width:50%;
+    margin-top:-11.5vh;
 }
 
 .guide {
@@ -70,18 +51,14 @@
     color: rgba(72, 60, 13, 0.836);
     font-weight: 700;
     line-height: 2.08em;
-    margin-top: 170px;
-    margin-left: 18px;
-    margin-right: 1000px;
-
-    border-style: solid;
-    border-color: blue;
+    margin-left: 1%;
+    width:28%;
+    margin-top:13vh;
 }
 
 .containerTarotText {
-    margin-left: 35px;
-    margin-right: 1000px;
-    margin-top: -112px;
+    margin-left: 1%;
+    width:27%;
     color: rgba(87, 154, 160, 100);
 }
 
@@ -91,12 +68,13 @@ h3 {
     font-weight: lighter;
     line-height: 1.4em;
     font-family: 'Josefin Sans';
-    margin-top: -25px;
+    margin-top:4vh;
 }
 
 h2 {
     font-family: 'Josefin Sans';
     margin-bottom: 1em;
     font-size: 5em;
-    line-height: 0.6615em;
+    line-height: 0.74em;
+    margin-top:10vh;
 }

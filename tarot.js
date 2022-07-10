@@ -2,8 +2,10 @@ class Tarot {
     constructor() {
         this.allTarotCards = []
         this.cardBackSideImage
-        this.x = 640
-        this.y = 225
+        // this.x = 640
+        // this.y = 225
+        this.x = 702
+        this.y = 337
         this.arithmeticExPosition = 310
         this.createCards()
         this.cardPicked
