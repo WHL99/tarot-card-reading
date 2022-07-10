@@ -11,7 +11,7 @@ class Card {
         this.startRevX = 702
         this.startRevY = 337
         this.randomX = Math.random() * 200
-        this.randomY = Math.random() * 200
+        this.randomY = Math.random() * 170
          // this.x = 640
         // this.y = 225
         this.x = 702
@@ -53,7 +53,7 @@ class Card {
 
     expansion() {
 
-        this.x = this.arithmeticExPosition + 180
+        this.x = this.arithmeticExPosition + 150
         this.y = 337
     }
 }
