@@ -1,12 +1,13 @@
 #p5-canvas {
     position: absolute;
-    top: 570px;
-    right: 60px;
-    margin-left: 65px;
-    margin-top: -464px;
+    top: 5vh;
+    bottom: 0vh;
+     /* right: 60px;
+    margin-left: 65px; */
+    /* margin-top: -464px;   */
 
-    margin-left: 10%;
-    width:90%;
+    margin-left: 4.5%;
+    width:95.5%;
 
     border-style: solid;
     border-color: red;
@@ -37,6 +38,7 @@
    
     margin-left: 1%;
     width:99%;
+    padding-top:0vh;
 
     border-style: solid;
     border-color: green;
@@ -51,6 +53,7 @@
    
     margin-left: 43%;
     width:57%;
+    padding-top:2vh;
 
     border-style: solid;
     border-color: green;
@@ -64,6 +67,7 @@
  
     margin-left: 50%;
     width:50%;
+    margin-top:-11.5vh;
 
     border-style: solid;
     border-color: green;
