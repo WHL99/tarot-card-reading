@@ -11,7 +11,7 @@
 }
 
 .background-photo {
-    background-image: url('./images/background.jpg');
+    /* background-image: url('./images/background.jpg'); */
     background-position: 0 0;
     background-size: cover;
     background-repeat: no-repeat;
