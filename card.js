@@ -7,7 +7,7 @@ class Card {
         this.expansionCard = false
         this.angleRev = 0
         this.scalarX = Math.random() * 230
-        this.scalarY = Math.random() * 180
+        this.scalarY = Math.random() * 150
         this.startRevX = 702
         this.startRevY = 337
         this.randomX = Math.random() * 200
