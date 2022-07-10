@@ -6,14 +6,16 @@ class Card {
         this.shuffleCard = false
         this.expansionCard = false
         this.angleRev = 0
-        this.scalarX = Math.random() * 350
+        this.scalarX = Math.random() * 230
         this.scalarY = Math.random() * 180
-        this.startRevX = 640
-        this.startRevY = 180
+        this.startRevX = 702
+        this.startRevY = 337
         this.randomX = Math.random() * 200
         this.randomY = Math.random() * 200
-        this.x = 640
-        this.y = 225
+         // this.x = 640
+        // this.y = 225
+        this.x = 702
+        this.y = 337
         this.width = 87 * 1.1
         this.height = 172 * 1.1
         this.position = Math.random() * 1400
@@ -41,15 +43,17 @@ class Card {
             this.angleRev++
         }
         else {
-            this.x = 640
-            this.y = 225
+              // this.x = 640
+        // this.y = 225
+        this.x = 702
+        this.y = 337
 
         }
     }
 
     expansion() {
 
-        this.x = this.arithmeticExPosition + 100
-        this.y = 225
+        this.x = this.arithmeticExPosition + 180
+        this.y = 337
     }
 }

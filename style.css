@@ -1,13 +1,13 @@
 #p5-canvas {
     position: absolute;
-    top: 5vh;
+    top: 0vh;
     bottom: 0vh;
      /* right: 60px;
     margin-left: 65px; */
     /* margin-top: -464px;   */
 
-    margin-left: 4.5%;
-    width:95.5%;
+    /* margin-left: 4.5%; */
+    width:100%;
 
     border-style: solid;
     border-color: red;
