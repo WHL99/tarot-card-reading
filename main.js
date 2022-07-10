@@ -62,7 +62,8 @@ function keyPressed() {
 }
 
 function mouseClicked() {
-    if (shuffleTimes == 2 && mouseX > 415 && mouseY < 409 && mouseX < 1183 && mouseY > 232) {
+    if (shuffleTimes == 2 && mouseX > 460 && mouseY < 524 && mouseX < 1240 && mouseY > 340) {
+        //x 460 - 1240
        
         let i = Math.floor((Math.random() * all22Cards.length))
         tarot.cardPicked = all22Cards[i]
@@ -72,7 +73,7 @@ function mouseClicked() {
         document.querySelector('.second-line').innerHTML = ''
         document.querySelector('.third-line').innerHTML = ''
 
-        console.log(mouseX, mouseY)
+        //console.log(mouseX, mouseY)
         for (let allTarotCard of tarot.allTarotCards) {
 
             allTarotCard.arithmeticExPosition = 100000

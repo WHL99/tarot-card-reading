@@ -12,7 +12,7 @@ class Card {
         this.startRevY = 337
         this.randomX = Math.random() * 200
         this.randomY = Math.random() * 170
-         // this.x = 640
+        // this.x = 640
         // this.y = 225
         this.x = 702
         this.y = 337
@@ -43,10 +43,10 @@ class Card {
             this.angleRev++
         }
         else {
-              // this.x = 640
-        // this.y = 225
-        this.x = 702
-        this.y = 337
+            // this.x = 640
+            // this.y = 225
+            this.x = 702
+            this.y = 337
 
         }
     }
