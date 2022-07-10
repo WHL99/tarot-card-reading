@@ -9,11 +9,11 @@ class Tarot {
         this.arithmeticExPosition = 310
         this.createCards()
         this.cardPicked
-        this.width = 87*1.1
-        this.height = 172*1.1
-        this.openedCardWidth = 87*2.2
-        this.openedCardHeight = 172*2.2
-        
+        this.width = 87 * 1.1
+        this.height = 172 * 1.1
+        this.openedCardWidth = 87 * 2.2
+        this.openedCardHeight = 172 * 2.2
+
     }
 
     createCards() {
@@ -33,17 +33,16 @@ class Tarot {
 
     draw() {
         clear()
-      
+
         this.allTarotCards.forEach(function (oneTarotCard) {
             oneTarotCard.draw()
         })
+        if (this.cardPicked !== undefined) {
+            image(this.cardPicked.src, this.x - (this.openedCardWidth - this.width) + 4, this.y - 173, this.openedCardWidth, this.openedCardHeight)
 
-        if (this.cardPicked !== undefined ){       
-            image(this.cardPicked.src, this.x - (this.openedCardWidth - this.width)+4, this.y - 173  , this.openedCardWidth, this.openedCardHeight)
-           
-            document.querySelector('.containerTarotText').innerHTML = '<h2>' + this.cardPicked.title  + '</h2><br><h3>' + this.cardPicked.text + '</h3>'
+            document.querySelector('.containerTarotText').innerHTML = '<h2>' + this.cardPicked.title + '</h2><br><div class="container-text"><h3 class="tarot-text">' + this.cardPicked.text + '</h3></div>'
             mouseClicked = function () { }
- 
+
         }
     }
 }
