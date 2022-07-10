@@ -5,18 +5,21 @@
     margin-left: 65px;
     margin-top: -464px;
 
-    border-style: solid;
-    border-color: red;
+    margin-left: 10%;
+    width:90%;
+
+    /* border-style: solid;
+    border-color: red; */
 
 }
 
 .background-photo {
-    /* background-image: url('./images/background.jpg'); */
+    background-image: url('./images/background.jpg');
     background-position: 0 0;
     background-size: cover;
     background-repeat: no-repeat;
     /* height: 650px; */
-    height: 100vh;
+    height: 98vh;
     /* padding-top: 50px; */
     object-fit: cover;
     /* position: relative; */
@@ -30,12 +33,13 @@
     font-size: 3em;
     color: rgb(214, 136, 214);
     font-weight: 900;
-    padding-top: 0;
-    margin-top: -39.5px;
-    margin-left: 14px;
+    
+   
+    margin-left: 1%;
+    width:99%;
 
-    border-style: solid;
-    border-color: green;
+    /* border-style: solid;
+    border-color: green; */
 }
 
 .second-line {
@@ -43,12 +47,13 @@
     font-size: 4.3em;
     color: rgb(214, 136, 214);
     font-weight: 900;
-    padding-top: 0;
-    margin-top: -50px;
-    margin-left: 619px;
+    
+   
+    margin-left: 43%;
+    width:57%;
 
-    border-style: solid;
-    border-color: green;
+    /* border-style: solid;
+    border-color: green; */
 }
 
 .third-line {
@@ -56,12 +61,12 @@
     font-size: 7.5em;
     color: rgb(214, 136, 214);
     font-weight: 900;
-    padding-top: 0;
-    margin-top: -92px;
-    margin-left: 725px;
+ 
+    margin-left: 50%;
+    width:50%;
 
-    border-style: solid;
-    border-color: green;
+    /* border-style: solid;
+    border-color: green; */
 }
 
 .guide {
@@ -70,12 +75,15 @@
     color: rgba(72, 60, 13, 0.836);
     font-weight: 700;
     line-height: 2.08em;
-    margin-top: 170px;
-    margin-left: 18px;
-    margin-right: 1000px;
+   
+   
 
-    border-style: solid;
-    border-color: blue;
+    margin-left: 1%;
+    width:30%;
+
+
+    /* border-style: solid;
+    border-color: blue; */
 }
 
 .containerTarotText {
