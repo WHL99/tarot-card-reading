@@ -3,11 +3,9 @@ const tarot = new Tarot()
 let shuffleTimes = 0
 let all22Cards = []
 
-
 function preload() {
 
     tarot.preload()
-
     all22Cards = [
         { src: loadImage('./images/cards/00.png'), title: `The<br>Fool`, text: `This is an exciting time with lots of potential for fun and wonderful experiences. Your confidence should be high, it's a great time for new possibilities. <br></br>If you are considering leaving your job, home or relationship, at some point you will.<br></br>An unexpected desire will be fulfilled, even before you express it!` },
         { src: loadImage('./images/cards/01.png'), title: `The Magician`, text: `This is a period of positive action with great potential. You are full of self-belief, feeling very empowered and will have the ability to think on your feet.<br></br>The Magician is an excellent omen for success: it's time to show everyone exactly what you're made of.` },
@@ -35,8 +33,6 @@ function preload() {
 }
 
 function setup() {
-
-
     let canvas = createCanvas(WIDTH, HEIGHT)
     canvas.parent('p5-canvas');
     angleMode(DEGREES)
@@ -63,7 +59,6 @@ function keyPressed() {
 
 function mouseClicked() {
     if (shuffleTimes == 2 && mouseX > 460 && mouseY < 524 && mouseX < 1240 && mouseY > 340) {
-        //x 460 - 1240
        
         let i = Math.floor((Math.random() * all22Cards.length))
         tarot.cardPicked = all22Cards[i]
@@ -73,7 +68,6 @@ function mouseClicked() {
         document.querySelector('.second-line').innerHTML = ''
         document.querySelector('.third-line').innerHTML = ''
 
-        //console.log(mouseX, mouseY)
         for (let allTarotCard of tarot.allTarotCards) {
 
             allTarotCard.arithmeticExPosition = 100000

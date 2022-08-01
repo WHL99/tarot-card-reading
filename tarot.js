@@ -2,8 +2,6 @@ class Tarot {
     constructor() {
         this.allTarotCards = []
         this.cardBackSideImage
-        // this.x = 640
-        // this.y = 225
         this.x = 702
         this.y = 337
         this.arithmeticExPosition = 310
@@ -13,7 +11,6 @@ class Tarot {
         this.height = 172 * 1.1
         this.openedCardWidth = 87 * 2.2
         this.openedCardHeight = 172 * 2.2
-
     }
 
     createCards() {
@@ -39,7 +36,6 @@ class Tarot {
         })
         if (this.cardPicked !== undefined) {
             image(this.cardPicked.src, this.x - (this.openedCardWidth - this.width) + 4, this.y - 173, this.openedCardWidth, this.openedCardHeight)
-
             document.querySelector('.containerTarotText').innerHTML = '<h2>' + this.cardPicked.title + '</h2><br><div class="container-text"><h3 class="tarot-text">' + this.cardPicked.text + '</h3></div>'
             mouseClicked = function () { }
 

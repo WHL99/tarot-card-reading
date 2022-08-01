@@ -1,6 +1,5 @@
 class Card {
     constructor(cardBackSideImage, arithmeticExPosition) {
-        console.log(arithmeticExPosition)
         this.cardBackSideImage = cardBackSideImage
         this.arithmeticExPosition = arithmeticExPosition
         this.shuffleCard = false
@@ -12,8 +11,6 @@ class Card {
         this.startRevY = 337
         this.randomX = Math.random() * 200
         this.randomY = Math.random() * 170
-        // this.x = 640
-        // this.y = 225
         this.x = 702
         this.y = 337
         this.width = 87 * 1.1
@@ -43,8 +40,6 @@ class Card {
             this.angleRev++
         }
         else {
-            // this.x = 640
-            // this.y = 225
             this.x = 702
             this.y = 337
 
@@ -52,7 +47,6 @@ class Card {
     }
 
     expansion() {
-
         this.x = this.arithmeticExPosition + 150
         this.y = 337
     }
