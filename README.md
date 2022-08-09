@@ -1,8 +1,8 @@
-<p align="right"><img src="https://user-images.githubusercontent.com/104759740/183773474-e000b979-abc8-435e-8bc4-9075b404812c.jpeg" alt="tarotLogo" height="120" /></p>
+<p align="right"><img src="https://user-images.githubusercontent.com/104759740/183773474-e000b979-abc8-435e-8bc4-9075b404812c.jpeg" alt="tarotLogo" height="80" /></p>
 
 # My Mission
 Reading Tarot card for people is one of my hobbies and also my sideline, I created this project to help people who are lost or confused at the moment get an initial answer.
-<p align="left"><img width="400" alt="index" src="https://user-images.githubusercontent.com/104759740/183773224-2715b0a5-cc4e-4587-8191-e3eb06a12e8a.gif"></p>
+<p align="left"><img width="460" alt="index" src="https://user-images.githubusercontent.com/104759740/183773224-2715b0a5-cc4e-4587-8191-e3eb06a12e8a.gif"></p>
 
 ## How To Play?
 [Tarot Card Reading](https://whl99.github.io/tarot-card-reading/)
