@@ -44,7 +44,7 @@ function draw() {
 }
 
 function keyPressed() {
-    if (keyCode === 32 && shuffleTimes < 2) {
+    if (keyCode === SHUFFLEKEYCODE && shuffleTimes < SHUFFLETIMES) {
         tarot.allTarotCards.forEach(card => {
             card.shuffleCard = !card.shuffleCard
         })
@@ -52,14 +52,14 @@ function keyPressed() {
 
     shuffleTimes++
 
-    if (shuffleTimes == 2) {
+    if (shuffleTimes === SHUFFLETIMES) {
         keyPressed = function () { }
     }
 }
 
 function mouseClicked() {
-    if (shuffleTimes == 2 && mouseX > 460 && mouseY < 524 && mouseX < 1240 && mouseY > 340) {
-       
+    if (shuffleTimes === SHUFFLETIMES && mouseX > LEFTBORDERX && mouseY < BOTTOMBORDERY && mouseX < RIGHTBORDERY && mouseY > TOPBORDERY) {
+
         let i = Math.floor((Math.random() * all22Cards.length))
         tarot.cardPicked = all22Cards[i]
 
@@ -69,11 +69,8 @@ function mouseClicked() {
         document.querySelector('.third-line').innerHTML = ''
 
         for (let allTarotCard of tarot.allTarotCards) {
-
-            allTarotCard.arithmeticExPosition = 100000
-            allTarotCard.y = 100000
+            allTarotCard.arithmeticExPosition = NONECHOOSEDCARDLASTPOSITION
+            allTarotCard.y = NONECHOOSEDCARDLASTPOSITION
         }
-    } 
-     
-
+    }
 } 

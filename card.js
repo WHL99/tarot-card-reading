@@ -4,30 +4,28 @@ class Card {
         this.arithmeticExPosition = arithmeticExPosition
         this.shuffleCard = false
         this.expansionCard = false
-        this.angleRev = 0
-        this.scalarX = Math.random() * 230
-        this.scalarY = Math.random() * 150
-        this.startRevX = 702
-        this.startRevY = 337
-        this.randomX = Math.random() * 200
-        this.randomY = Math.random() * 170
-        this.x = 702
-        this.y = 337
-        this.width = 87 * 1.1
-        this.height = 172 * 1.1
-        this.position = Math.random() * 1400
-        this.firstExPosition = 300
+        this.angleRev = ANGLEREV
+        this.scalarX = Math.random() * SCALARXCOF
+        this.scalarY = Math.random() * SCALARYCOF
+        this.startRevX = STARTREVX
+        this.startRevY = STARTREVY
+        this.randomX = Math.random() * RANDOMXCOF
+        this.randomY = Math.random() * RANDOMYCOF
+        this.x = CARDLANDINGX
+        this.y = CARDLANDINGY
+        this.cardWidth = CARDWIDTH
+        this.cardHeight = CARDHEIGHT
+        this.position = Math.random() * POSITIONCOF
     }
-
 
     preload() {
         this.backgroundImage = loadImage('./images/background.jpg')
     }
 
     draw() {
-        image(this.cardBackSideImage, this.x, this.y, this.width, this.height)
+        image(this.cardBackSideImage, this.x, this.y, this.cardWidth, this.cardHeight)
         this.shuffle()
-        if (keyCode === 32 && shuffleTimes == 2) {
+        if (keyCode === SHUFFLEKEYCODE && shuffleTimes === SHUFFLETIMES) {
             this.expansion()
         }
     }
@@ -36,18 +34,16 @@ class Card {
         this.x = this.startRevX + this.scalarX * cos(this.angleRev);
         this.y = this.startRevY + this.scalarY * sin(this.angleRev);
         if (this.shuffleCard === true) {
-
             this.angleRev++
         }
         else {
-            this.x = 702
-            this.y = 337
-
+            this.x = CARDLANDINGX
+            this.y = CARDLANDINGY
         }
     }
 
     expansion() {
-        this.x = this.arithmeticExPosition + 150
-        this.y = 337
+        this.x = this.arithmeticExPosition + EXPOSITIONCOF
+        this.y = CARDLANDINGY
     }
 }
